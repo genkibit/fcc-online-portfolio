@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Noel Noche">
+    <meta name="description" content="Free Code Camp Project Zipline: Portfolio Page.  Completed by Noel Noche on Feb 2, 2016.">
+    
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <style>
+      body,html{font-size:18px}a,body{color:#fff}h1,ul{margin:0}h1,nav{width:auto}.app-box,body{text-align:center}@font-face{font-family:Catamaran;font-style:normal;font-weight:200;src:local('Catamaran ExtraLight'),local('Catamaran-ExtraLight'),url(https://fonts.gstatic.com/s/catamaran/v1/hFc-HKSsGk6M-psujei1MBampu5_7CjHW5spxoeN3Vs.woff2) format('woff2')}@font-face{font-family:Catamaran;font-style:normal;font-weight:600;src:local('Catamaran SemiBold'),local('Catamaran-SemiBold'),url(https://fonts.gstatic.com/s/catamaran/v1/a9PlHHnuBWiGGk0TwuFKThampu5_7CjHW5spxoeN3Vs.woff2) format('woff2')}body{font-family:Catamaran,"Helvetica Neue",sans-serif;font-weight:300;font-size:1rem;background:#4c4c4c;background:-webkit-linear-gradient(45deg,#4c4c4c 0,#595959 25%,#000 25%,#131313 67%,#2c2c2c 67%);background:linear-gradient(45deg,#4c4c4c 0,#595959 25%,#000 25%,#131313 67%,#2c2c2c 67%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#2c2c2c', GradientType=1 )}h1,h2,h3,nav{font-weight:400}h2{margin-bottom:2.5rem;font-size:54px;font-size:3rem}a:hover{text-decoration:underline;color:#0cf}ul{padding:0}li{list-style-type:none}.icon-spacer{padding-left:.5rem}#fixed-wrapper{position:fixed;z-index:99;width:100vw;padding:.3rem 3rem 0;background-color:#000;background-color:rgba(0,0,0,.8)}h1{font-size:36px;font-size:2rem;line-height:1;float:left}#menu-icon,.up-mark,nav{float:right}#menu-icon{display:none}nav{font-size:21.6px;font-size:1.2rem}#top-social-links li,nav li{padding:0 .5rem;display:inline-block}#hero{padding:20% 0;background-image:url(http://placehold.it/1920x1080);background-repeat:no-repeat;background-size:cover;background-position:center center;background-attachment:fixed}#top-social-links{margin-top:1rem}.app-box{max-width:306px;max-width:17rem;margin:0 auto;overflow:hidden}#works{margin-top:25%}.app-pic{position:relative;z-index:1}.app-name{position:absolute;left:3px;width:300px;margin:0;padding-top:3px;background-color:#000;background-color:rgba(0,0,0,.8)}.app-description{position:relative;top:-90px}.app-description p{margin:0}#profile-box img{border-radius:50%}#connect ul,#profile-box p{text-align:left}.popup,footer{text-align:center}#connect{margin-top:20%}#connect li{font-size:27px;font-size:1.5rem}footer{margin:10rem 0 3rem;padding-top:3rem}footer p{display:inline-block;margin-right:1rem}.popup{display:none;position:fixed;top:0;left:0;z-index:99;width:100%;height:100%;background:#333;background:rgba(0,0,0,.75)}.popup-inner{position:absolute;top:50%;left:50%;max-width:684px;max-width:38rem;width:90%;padding:2rem;background:#fff;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}div.popup-inner a p{font-family:custom-01;font-size:23.4px;font-size:1.3rem}form{margin-bottom:1rem}form img{margin:0 auto}.popup-inner button{margin-top:1rem}.popup-close{display:inline-block;position:absolute;top:3.6px;top:.2rem;right:3.6px;right:.2rem;width:18px;width:1rem;height:18px;height:1rem;color:#069}@media screen and (max-width:767px){#profile-box img{display:none}#connect ul{margin-top:1rem}}@media screen and (max-width:600px){#fixed-wrapper{padding:.3rem 0 0}h1{margin-left:1rem}#menu-icon{margin-right:1rem;font-size:1.5rem;display:inline}nav ul{width:100vw;text-align:right;display:none}nav li{padding-right:1rem;display:block}#hero{padding:30% 0}}
+    </style>
+
+    <title>Noel Noche | Web Developer | Project Portfolio</title>
+  </head>
+  <body>
+    <!--[if lt IE 9]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser.
+    Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->		
+    
+    <section id="top">
+      <header>
+        <div id="fixed-wrapper">
+          <h1>Noel Noche</h1>
+          <span id="menu-icon"><i class="fa fa-bars" aria-hidden="true"><span class="sr-only"> Menu</span></i></span>
+          <nav>
+            <ul>
+              <li><a href="#works">works</a></li>
+              <li><a href="#connect">connect</a></li>
+              <li><a href="#top">top</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div id="hero">
+        <h2>Building experiences. Improving lives.</h2>
+      </div>
+      <ul id="top-social-links">
+        <li><a href="#"><i class="fa fa-github fa-2x fa-fw" aria-hidden="true"></i><span class="sr-only">GitHub</span></a></li>
+        <li><a href="#"><i class="fa fa-fire fa-2x fa-fw" aria-hidden="true"></i><span class="sr-only">FreeCodeCamp</span></a></li>
+        <li><a href="#"><i class="fa fa-twitter fa-2x fa-fw" aria-hidden="true"></i><span class="sr-only">Twitter</span></a></li>
+        <li><a href="#"><i class="fa fa-linkedin-square fa-2x fa-fw" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a></li>
+        <li class="email" data-popup-open="popup-1"><a><i class="fa fa-envelope fa-2x fa-fw" aria-hidden="true"><span class="sr-only">Email</span></i></a></li>
+      </ul>
+    </section>
+
+    <div class="container">
+      <section id="works">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-lg-12">
+            <h2>Works</h2>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="app-box">
+              <div class="app-pic">
+                <h3 class="app-name">App A <span class="up-mark"><i class="fa fa-angle-up fa-fw" aria-hidden="true"></i></span></h3>
+                <img src="http://placehold.it/300x250" alt="App A">
+              </div>
+              <div class="app-description">
+                <p>Bacon ipsum dolor amet boudin tri-tip jerky cupim rump cow ham hock.</p>
+                <p><a href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="app-box">
+              <div class="app-pic">								
+                <h3 class="app-name">App B <span class="up-mark"><i class="fa fa-angle-up fa-fw" aria-hidden="true"></i></span></h3>
+                <img src="http://placehold.it/300x250" alt="App B">
+              </div>
+              <div class="app-description">
+              <p>Bacon ipsum dolor amet boudin tri-tip jerky cupim rump cow ham hock.</p>
+                <p><a href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="app-box">
+              <div class="app-pic">								
+                <h3 class="app-name">App C <span class="up-mark"><i class="fa fa-angle-up fa-fw" aria-hidden="true"></i></span></h3>
+                <img src="http://placehold.it/300x250" alt="App C">
+              </div>
+              <div class="app-description">
+                <p>Bacon ipsum dolor amet boudin tri-tip jerky cupim rump cow ham hock.</p>
+                <p><a href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="app-box">
+              <div class="app-pic">
+                <h3 class="app-name">App D <span class="up-mark"><i class="fa fa-angle-up fa-fw" aria-hidden="true"></i></span></h3>
+                <img src="http://placehold.it/300x250" alt="App D">
+              </div>
+              <div class="app-description">
+                <p>Bacon ipsum dolor amet boudin tri-tip jerky cupim rump cow ham hock.</p>
+                <p><a href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="app-box">
+              <div class="app-pic">	
+                <h3 class="app-name">App E <span class="up-mark"><i class="fa fa-angle-up fa-fw" aria-hidden="true"></i></span></h3>
+                <img src="http://placehold.it/300x250" alt="App E">
+              </div>
+              <div class="app-description">
+                <p>Bacon ipsum dolor amet boudin tri-tip jerky cupim rump cow ham hock.</p>
+                <p><a href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="app-box">
+              <div class="app-pic">	
+                <h3 class="app-name">App F <span class="up-mark"><i class="fa fa-angle-up fa-fw" aria-hidden="true"></i></span></h3>
+                <img src="http://placehold.it/300x250" alt="App F">
+              </div>
+              <div class="app-description">
+                <p>Bacon ipsum dolor amet boudin tri-tip jerky cupim rump cow ham hock.</p>
+                <a href="#"><p>Learn more</p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    <section id="connect">			
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-lg-12">
+            <h2>Connect</h2>
+          </div>
+          <div class="col-xs-12 col-md-8 col-lg-9">
+            <div class="row">
+              <div id="profile-box">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                  <img class="img-responsive" src="http://placehold.it/180x180" alt="profile picture">
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
+                  <p>
+                    Bacon ipsum dolor amet prosciutto chicken kielbasa ham chuck pancetta
+                    tenderloin bacon brisket beef cow. Bresaola chuck pork loin, doner capicola
+                    tail prosciutto pancetta shank ground round. Bresaola pork chop salami doner
+                    short ribs, rump capicola picanha beef ball tip shankle. Short ribs pork loin
+                    tenderloin andouille beef biltong rump corned beef ribeye meatloaf ground round
+                    flank filet mignon. Ground round pork chop hamburger bresaola, boudin pancetta capicola
+                    meatloaf jerky frankfurter bacon.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-xs-12 col-md-4 col-lg-3">
+            <ul>
+              <li><a href="#"><i class="fa fa-github fa-fw" aria-hidden="true"></i><span class="icon-spacer">GitHub</span></a></li>
+              <li><a href="#"><i class="fa fa-fire fa-fw" aria-hidden="true"></i><span class="icon-spacer">FreeCodeCamp</span></a></li>
+              <li><a href="#"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i><span class="icon-spacer">Twitter</span></a></li>
+              <li><a href="#"><i class="fa fa-linkedin-square fa-fw" aria-hidden="true"></i><span class="icon-spacer">LinkedIn</span></a></li>
+              <li class="email" data-popup-open="popup-1"><a><i class="fa fa-envelope fa-fw" aria-hidden="true"></i><span class="icon-spacer">Email</span></a></li>
+            </ul>
+          </div>
+          
+          <div class="col-xs-12 col-md-12 col-lg-12">
+            
+            <!-- Code borrowed from: http://inspirationalpixels.com/tutorials/custom-popup-modal -->
+            <div class="popup" data-popup="popup-1">
+              <div class="popup-inner">
+                <h3>Contact Form</h3>
+                <form id="contact-form">
+                  
+                  <!-- TODO: Implement a contact form using a service (or make my own) -->
+                  <img class="img-responsive" src="http://placehold.it/320x400" alt="Contact Form">
+                  <!-- Do not change the code! -->
+                  
+                </form>
+                <a data-popup-close="popup-1" href="#"><p>Close</p></a>
+                <a class="popup-close" data-popup-close="popup-1" href="#"><i class="fa fa-times" aria-hidden="true"><span class="sr-only">close</span></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </div><!-- .container END -->
+        
+    <footer class="text-center">
+        <p>&#169; 2016 Noel Noche</p>
+        <p><a href="https://github.com/genkibit/fcc-online-portfolio/issues" target="_blank">Report an issue</a></p>
+    </footer>
+    
+    <script
+        src="https://code.jquery.com/jquery-3.1.0.min.js"
+        integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="jquery-3.1.0.min.js">');</script>
+    <script>
+      $(function(){function f(a){a!==g&&(h&&!0===b&&(c.toggle(),b=!1),"down"===a?k.animate({opacity:0},100):k.animate({opacity:1},100));g=a}var k=$("#fixed-wrapper"),c=$("nav ul"),d=$("nav ul li"),h=$("#menu-icon"),b=!1,e=0,g;$(".app-pic").click(function(){$(this).animate({top:-95},400,"swing",function(){$(this).delay(3E3).animate({top:0},400,"swing")})});$(window).scroll(function(a){a=$(this).scrollTop();e&&(a>e?f("down"):f("up"));e=a});h.click(function(){!1===b?(c.toggle(),d.fadeIn(),b=!0):(d.fadeOut(),
+      c.toggle(),b=!1)});d.click(function(){!0===b&&(d.fadeOut(),c.hide(),b=!1)});$(".email").on("click",function(a){var b=jQuery(this).attr("data-popup-open");$('[data-popup="'+b+'"]').fadeIn(350);a.preventDefault()});$("[data-popup-close]").on("click",function(a){var b=jQuery(this).attr("data-popup-close");$('[data-popup="'+b+'"]').fadeOut(350);a.preventDefault()})});
+    </script>
+    
+  </body>
+</html>

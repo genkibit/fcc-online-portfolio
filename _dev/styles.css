@@ -1,0 +1,312 @@
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Catamaran ExtraLight'), local('Catamaran-ExtraLight'), url(https://fonts.gstatic.com/s/catamaran/v1/hFc-HKSsGk6M-psujei1MBampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Catamaran SemiBold'), local('Catamaran-SemiBold'), url(https://fonts.gstatic.com/s/catamaran/v1/a9PlHHnuBWiGGk0TwuFKThampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Catamaran", "Helvetica Neue", "sans-serif";
+  font-weight: 300;
+  font-size: 18px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,595959+25,000000+25,131313+67,2c2c2c+67 */
+  background: #4c4c4c; /* Old browsers */ /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #4c4c4c 0%,#595959 25%,#000000 25%,#131313 67%,#2c2c2c 67%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #4c4c4c 0%,#595959 25%,#000000 25%,#131313 67%,#2c2c2c 67%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#2c2c2c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+h1, h2, h3, nav {
+  font-weight: normal;
+}
+
+h2 {
+  margin-bottom: 45px;
+  margin-bottom: 2.5rem;
+  font-size: 54px;
+  font-size: 3rem;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0cf;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.icon-spacer {
+  padding-left: 9px;
+  padding-left: 0.5rem;
+}
+
+#fixed-wrapper {
+  position: fixed;
+  z-index: 99;
+  width: 100vw;
+  padding: 5.399px 54px 0 54px;
+  padding: 0.3rem 3rem 0 3rem;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+  width: auto;
+  margin: 0;
+  font-size: 36px;
+  font-size: 2rem;
+  line-height: 1;
+  float: left;
+}
+
+#menu-icon {
+  float: right;
+  display: none;
+}
+
+nav {
+  width: auto;
+  font-size: 21.599px;
+  font-size: 1.2rem;
+  float:right;
+}
+
+nav li {
+  padding: 0 9px;
+  padding: 0 0.5rem;
+  display: inline-block
+}
+
+#hero {
+  padding: 20% 0;
+  background-image: url("http://placehold.it/1920x1080");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+#top-social-links {
+  margin-top: 18px;
+  margin-top: 1rem;
+}
+
+#top-social-links li {
+  padding: 0 9px;
+  padding: 0 0.5rem;
+  display: inline-block
+}
+
+.app-box {
+  max-width: 306px;
+  max-width: 17rem;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+#works {
+  margin-top: 25%;
+}
+
+.app-pic {
+  position: relative;
+  z-index: 1;
+}
+
+.app-name {
+  position: absolute;
+  left: 3px;
+  width: 300px;
+  margin: 0;
+  padding-top: 3px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.up-mark {
+  float: right;
+}
+
+.app-description {
+  position: relative;
+  top: -90px;
+}
+
+.app-description p {
+  margin: 0;
+}
+
+/*.app-box li {*/
+/*	display: inline;*/
+/*	padding: 0 0.3rem;*/
+/*}*/
+
+#profile-box img {
+  border-radius: 50%;
+  
+}
+
+#profile-box p {
+  text-align: left;
+}
+
+#connect {
+  margin-top: 20%;
+}
+  
+#connect ul {
+  text-align: left;
+}
+
+#connect li {
+  font-size: 27px;
+  font-size: 1.5rem;
+}
+
+
+footer {
+  margin: 180px 0 54px  0;
+  margin: 10rem 0 3rem  0;
+  padding-top: 54px;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+footer p {
+  display: inline-block;
+  margin-right: 18px;
+  margin-right: 1rem;   
+}
+
+
+/* Pop-up form stylings */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: #333;
+  background: rgba(0,0,0,0.75);
+}
+
+.popup-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 684px;
+  max-width: 38rem;
+  width: 90%;
+  padding: 36px;
+  padding: 2rem;
+  background: #fff;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+div.popup-inner a p {
+  font-family: "custom-01";
+  font-size: 23.4px;
+  font-size: 1.3rem;
+}
+
+form {
+  margin-bottom: 18px;
+  margin-bottom: 1rem;
+}
+
+form img {
+  margin: 0 auto;
+}
+
+.popup-inner button {
+  margin-top: 18px;
+  margin-top: 1rem;
+}
+
+/* Close Button */
+.popup-close {
+  display: inline-block;
+  position: absolute;
+  top: 3.6px;
+  top: 0.2rem;
+  right: 3.6px;
+  right: 0.2rem;
+  width: 18px;
+  width: 1rem;
+  height: 18px;
+  height: 1rem;
+  color: #069;
+}
+@media screen and (max-width: 767px) {
+
+  #profile-box img {
+    display: none;
+  }
+
+  #connect ul {
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+
+  #fixed-wrapper {
+    padding: 0.3rem 0 0 0;
+  }
+
+  h1 {
+    margin-left: 1rem;
+  }
+
+  #menu-icon {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    display: inline;
+
+  }
+
+  nav ul {
+    width: 100vw;
+    text-align: right;
+    display: none;
+  }
+
+  nav li {
+    padding-right: 1rem;
+    display: block;
+  }
+
+  #hero {
+    padding: 30% 0;
+  }
+}
+
