@@ -147,10 +147,17 @@ nav li {
   padding-top: 3px;
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+.app-name:hover {
+  background-color: #0cf;
 }
 
 .up-mark {
-  float: right;
+  position: absolute;
+  top: 90%;
 }
 
 .app-description {
