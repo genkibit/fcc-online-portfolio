@@ -19,12 +19,12 @@ The project rubric is as follows:
 
 Link
 ---
-Access the page **[here](http://genkibit.github.io/fcc-online-portfolio/)**.
+Access the page **[here](http://noelnoche.github.io/fcc-online-portfolio/)**.
 
 
 License
 ---
-Code provided under an **[MIT license](https://github.com/genkibit/fcc-online-portfolio/blob/gh-pages/LICENSE.md)**
+Code provided under an **[MIT license](https://github.com/noelnoche/fcc-online-portfolio/blob/gh-pages/LICENSE.md)**
 
 
 Changelog
